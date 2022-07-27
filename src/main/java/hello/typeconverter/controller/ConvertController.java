@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 public class ConvertController {
 
     /** 뷰 템플릿에 컨버터 적용하기 */
-    @GetMapping("/convert-view")
+    @GetMapping("/converter-view")
     public String  converterView(Model model){
         model.addAttribute("number",10000);
         model.addAttribute("ipPort", new IpPort("127.0.0.1",8080));
